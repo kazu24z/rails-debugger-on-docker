@@ -1,0 +1,8 @@
+{
+  "dockerComposeFile": ["../docker-compose.yml", "docker-compose.yml"],
+  "service": "web",
+  "workspaceFolder": "/workspace",
+	"extensions": [
+    "KoichiSasada.vscode-rdbg"
+  ],
+}

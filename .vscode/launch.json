@@ -1,0 +1,24 @@
+{
+	// IntelliSense を使用して利用可能な属性を学べます。
+	// 既存の属性の説明をホバーして表示します。
+	// 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		// {
+		// 	"type": "rdbg",
+		// 	"name": "Attach with rdbg",
+		// 	"request": "attach",
+		// 	"debugPort": "localhost:1234",
+		// 	"localfsMap": "/app:${workspaceFolder}"
+		// },
+		{
+			"type": "rdbg",
+			"name": "Run rails server",
+			"request": "launch",
+			"command": "bin/rails", // Breakpoints do not work with "rails".
+      "script": "s", // launch rails server with debugger
+      "args": ["-p", "1234"],
+      "askParameters": false // Do not ask startup parameter any more
+		},
+	]
+}
